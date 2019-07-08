@@ -28,15 +28,15 @@ pipeline{
 
         // sonarQube
         // Name of the sonarQube tool
-        sonarTool = 'SonarQube'
+        sonarTool = 'SonarQube-scanner'
         // Name of the sonarQube environment
-        sonarEnv = "SonarQube"
+        sonarEnv = "SharesSonar"
 
         // Nexus
         // Artifact groupId
         groupId = 'com.capgemini.octest'
         // Nexus repository ID
-        repositoryId = 'pl-nexus'
+        repositoryId = 'nexus'
         // Nexus internal URL
         repositoryUrl = 'http://nexus3-core:8081/nexus3/repository/'
         // Maven global settings configuration ID
@@ -48,7 +48,7 @@ pipeline{
         // Docker
         dockerFileName = 'Dockerfile.ci'
         dockerRegistry = 'docker-registry-docker-registry-shared-services.pl.s2-eu.capgemini.com'
-        dockerRegistryCredentials = 'nexus-docker'
+        dockerRegistryCredentials = 'nexusDeployer'
         
         
 
