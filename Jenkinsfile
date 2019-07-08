@@ -47,7 +47,7 @@ pipeline{
         
         // Docker
         dockerFileName = 'Dockerfile.ci'
-        dockerRegistry = 'docker-registry-docker-registry-shared-services.pl.s2-eu.capgemini.com'
+        dockerRegistry = 'docker-registry-shared-services.pl.s2-eu.capgemini.com'
         dockerRegistryCredentials = 'nexusDeployer'
         
         
